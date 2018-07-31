@@ -1,0 +1,82 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion compileSdkVersionValue
+    defaultConfig {
+        applicationId "com.indeema.smartlock"
+        minSdkVersion minSdkVersionValue
+        targetSdkVersion targetSdkVersionValue
+        versionCode versionCodeValue
+        versionName versionNameValue
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled multiDexEnabledValue
+    }
+    buildTypes {
+        release {
+            minifyEnabled minifyEnabledValue
+            shrinkResources shrinkResourceValue
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kapt {
+        generateStubs = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    api project(':domain')
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //SupportDependency
+    implementation supportDependencies.appCompat
+    implementation supportDependencies.support
+    implementation supportDependencies.design
+    implementation supportDependencies.palette
+    implementation supportDependencies.annotations
+    implementation supportDependencies.recyclerview
+    implementation supportDependencies.cardview
+    implementation supportDependencies.customTabs
+    implementation supportDependencies.constraintLayout
+
+    //DaggerDependency
+    implementation daggerDependencies.dagger
+    kapt 'com.google.dagger:dagger-compiler:2.15'
+
+    //retrofit
+    implementation retrofitDependencies.retrofit
+    implementation retrofitDependencies.converterGson
+    implementation retrofitDependencies.adapterRxjava2
+
+    //okHttp
+    implementation okHttpDependencies.okhttp
+    implementation okHttpDependencies.loggingInterceptor
+
+    //rx
+    implementation rxDependencies.rxandroid2
+    implementation rxDependencies.rxkotlin2
+    implementation rxDependencies.rxjava2
+
+    //butterKnife
+    implementation butterKnifeDependencies.butterKnife
+    kapt 'com.jakewharton:butterknife-compiler:8.8.1'
+}

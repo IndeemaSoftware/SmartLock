@@ -1,0 +1,760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00C593E06B9B8684AE8E16CA /* Pods_smartLockTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 710823584063248B693E7186 /* Pods_smartLockTests.framework */; };
+		014BF7B347A89EE377ECA84D /* Pods_smartLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80996F7D1BEA51AE092B9EE1 /* Pods_smartLock.framework */; };
+		04587F6420B0CFD30004B56F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04587F6320B0CFD30004B56F /* Extensions.swift */; };
+		2BFF982F42C4953257301418 /* Pods_smartLockUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 326631ABAEC9A8DCAA01265E /* Pods_smartLockUITests.framework */; };
+		83023E1D20E0CFF300DB287E /* AppShortcutType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E1C20E0CFF300DB287E /* AppShortcutType.swift */; };
+		83023E4120E12B5500DB287E /* SmartLockSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83023E4020E12B5500DB287E /* SmartLockSwitch.swift */; };
+		835BB29620E2412D00ACBD1E /* IndeemaOfficeCircularRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835BB29520E2412D00ACBD1E /* IndeemaOfficeCircularRegion.swift */; };
+		83EB1EE420E23AF800E7EDAF /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EB1EE320E23AF800E7EDAF /* LocationManager.swift */; };
+		BB3F477820B1404400DE8CB5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3F477720B1404400DE8CB5 /* SettingsViewController.swift */; };
+		F3430FF620B0408700FD4A2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3430FF520B0408700FD4A2C /* AppDelegate.swift */; };
+		F3430FF820B0408700FD4A2C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3430FF720B0408700FD4A2C /* LoginViewController.swift */; };
+		F3430FFB20B0408700FD4A2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3430FF920B0408700FD4A2C /* Main.storyboard */; };
+		F3430FFD20B0408700FD4A2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3430FFC20B0408700FD4A2C /* Assets.xcassets */; };
+		F343100020B0408700FD4A2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3430FFE20B0408700FD4A2C /* LaunchScreen.storyboard */; };
+		F343100B20B0408700FD4A2C /* smartLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343100A20B0408700FD4A2C /* smartLockTests.swift */; };
+		F343101620B0408700FD4A2C /* smartLockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F343101520B0408700FD4A2C /* smartLockUITests.swift */; };
+		F3CBB95E20B042EC00458626 /* SmartLockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CBB95D20B042EC00458626 /* SmartLockManager.swift */; };
+		F3CBB96020B0551800458626 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CBB95F20B0551800458626 /* HomeViewController.swift */; };
+		F3CBB96220B05A1400458626 /* KeyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CBB96120B05A1400458626 /* KeyStorage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F343100720B0408700FD4A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3430FEA20B0408700FD4A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3430FF120B0408700FD4A2C;
+			remoteInfo = smartLock;
+		};
+		F343101220B0408700FD4A2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3430FEA20B0408700FD4A2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3430FF120B0408700FD4A2C;
+			remoteInfo = smartLock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04587F5F20B0CF1C0004B56F /* smartLock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "smartLock-Bridging-Header.h"; sourceTree = "<group>"; };
+		04587F6320B0CFD30004B56F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0F43E7BD42A14AE49BE76724 /* Pods-smartLock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartLock.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartLock/Pods-smartLock.debug.xcconfig"; sourceTree = "<group>"; };
+		1D4E0AF8DB5BBFBC8ECC00D7 /* Pods-smartLockTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartLockTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartLockTests/Pods-smartLockTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F45C5D3F95DF4EEF04B149E /* Pods-smartLockTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartLockTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-smartLockTests/Pods-smartLockTests.release.xcconfig"; sourceTree = "<group>"; };
+		326631ABAEC9A8DCAA01265E /* Pods_smartLockUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartLockUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		710823584063248B693E7186 /* Pods_smartLockTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartLockTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73D815BF586683C0EFBF50EB /* Pods-smartLock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartLock.release.xcconfig"; path = "Pods/Target Support Files/Pods-smartLock/Pods-smartLock.release.xcconfig"; sourceTree = "<group>"; };
+		80996F7D1BEA51AE092B9EE1 /* Pods_smartLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83023E1C20E0CFF300DB287E /* AppShortcutType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppShortcutType.swift; sourceTree = "<group>"; };
+		83023E4020E12B5500DB287E /* SmartLockSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartLockSwitch.swift; sourceTree = "<group>"; };
+		835BB29520E2412D00ACBD1E /* IndeemaOfficeCircularRegion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndeemaOfficeCircularRegion.swift; sourceTree = "<group>"; };
+		83EB1EE320E23AF800E7EDAF /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		BB3F477720B1404400DE8CB5 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		C2917D7AFC80AA76B82B94BF /* Pods-smartLockUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartLockUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-smartLockUITests/Pods-smartLockUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F3430FF220B0408700FD4A2C /* smartLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3430FF520B0408700FD4A2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3430FF720B0408700FD4A2C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F3430FFA20B0408700FD4A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3430FFC20B0408700FD4A2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3430FFF20B0408700FD4A2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F343100120B0408700FD4A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F343100620B0408700FD4A2C /* smartLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F343100A20B0408700FD4A2C /* smartLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartLockTests.swift; sourceTree = "<group>"; };
+		F343100C20B0408700FD4A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F343101120B0408700FD4A2C /* smartLockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartLockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F343101520B0408700FD4A2C /* smartLockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartLockUITests.swift; sourceTree = "<group>"; };
+		F343101720B0408700FD4A2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3CBB95D20B042EC00458626 /* SmartLockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartLockManager.swift; sourceTree = "<group>"; };
+		F3CBB95F20B0551800458626 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F3CBB96120B05A1400458626 /* KeyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStorage.swift; sourceTree = "<group>"; };
+		F3E7E490692DDA5703685279 /* Pods-smartLockUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartLockUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-smartLockUITests/Pods-smartLockUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3430FEF20B0408700FD4A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				014BF7B347A89EE377ECA84D /* Pods_smartLock.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F343100320B0408700FD4A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00C593E06B9B8684AE8E16CA /* Pods_smartLockTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F343100E20B0408700FD4A2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BFF982F42C4953257301418 /* Pods_smartLockUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3075387948DDBDBDAF8740E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				80996F7D1BEA51AE092B9EE1 /* Pods_smartLock.framework */,
+				710823584063248B693E7186 /* Pods_smartLockTests.framework */,
+				326631ABAEC9A8DCAA01265E /* Pods_smartLockUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		835BB29720E242A200ACBD1E /* Presentation Layer */ = {
+			isa = PBXGroup;
+			children = (
+				83023E4020E12B5500DB287E /* SmartLockSwitch.swift */,
+				BB3F477720B1404400DE8CB5 /* SettingsViewController.swift */,
+				F3430FF720B0408700FD4A2C /* LoginViewController.swift */,
+				F3CBB95F20B0551800458626 /* HomeViewController.swift */,
+				F3430FF920B0408700FD4A2C /* Main.storyboard */,
+			);
+			path = "Presentation Layer";
+			sourceTree = "<group>";
+		};
+		835BB29820E242BF00ACBD1E /* Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				83023E1C20E0CFF300DB287E /* AppShortcutType.swift */,
+				83EB1EE320E23AF800E7EDAF /* LocationManager.swift */,
+				835BB29520E2412D00ACBD1E /* IndeemaOfficeCircularRegion.swift */,
+				F3CBB95D20B042EC00458626 /* SmartLockManager.swift */,
+				F3CBB96120B05A1400458626 /* KeyStorage.swift */,
+			);
+			path = "Model Layer";
+			sourceTree = "<group>";
+		};
+		B9427C218E474F31E5552901 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F43E7BD42A14AE49BE76724 /* Pods-smartLock.debug.xcconfig */,
+				73D815BF586683C0EFBF50EB /* Pods-smartLock.release.xcconfig */,
+				1D4E0AF8DB5BBFBC8ECC00D7 /* Pods-smartLockTests.debug.xcconfig */,
+				2F45C5D3F95DF4EEF04B149E /* Pods-smartLockTests.release.xcconfig */,
+				C2917D7AFC80AA76B82B94BF /* Pods-smartLockUITests.debug.xcconfig */,
+				F3E7E490692DDA5703685279 /* Pods-smartLockUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3430FE920B0408700FD4A2C = {
+			isa = PBXGroup;
+			children = (
+				F3430FF420B0408700FD4A2C /* smartLock */,
+				F343100920B0408700FD4A2C /* smartLockTests */,
+				F343101420B0408700FD4A2C /* smartLockUITests */,
+				F3430FF320B0408700FD4A2C /* Products */,
+				B9427C218E474F31E5552901 /* Pods */,
+				3075387948DDBDBDAF8740E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3430FF320B0408700FD4A2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3430FF220B0408700FD4A2C /* smartLock.app */,
+				F343100620B0408700FD4A2C /* smartLockTests.xctest */,
+				F343101120B0408700FD4A2C /* smartLockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3430FF420B0408700FD4A2C /* smartLock */ = {
+			isa = PBXGroup;
+			children = (
+				04587F6320B0CFD30004B56F /* Extensions.swift */,
+				835BB29820E242BF00ACBD1E /* Model Layer */,
+				835BB29720E242A200ACBD1E /* Presentation Layer */,
+				F3430FFC20B0408700FD4A2C /* Assets.xcassets */,
+				F3430FFE20B0408700FD4A2C /* LaunchScreen.storyboard */,
+				F3430FF520B0408700FD4A2C /* AppDelegate.swift */,
+				F343100120B0408700FD4A2C /* Info.plist */,
+				04587F5F20B0CF1C0004B56F /* smartLock-Bridging-Header.h */,
+			);
+			path = smartLock;
+			sourceTree = "<group>";
+		};
+		F343100920B0408700FD4A2C /* smartLockTests */ = {
+			isa = PBXGroup;
+			children = (
+				F343100A20B0408700FD4A2C /* smartLockTests.swift */,
+				F343100C20B0408700FD4A2C /* Info.plist */,
+			);
+			path = smartLockTests;
+			sourceTree = "<group>";
+		};
+		F343101420B0408700FD4A2C /* smartLockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F343101520B0408700FD4A2C /* smartLockUITests.swift */,
+				F343101720B0408700FD4A2C /* Info.plist */,
+			);
+			path = smartLockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3430FF120B0408700FD4A2C /* smartLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F343101A20B0408700FD4A2C /* Build configuration list for PBXNativeTarget "smartLock" */;
+			buildPhases = (
+				4F86070EA4C910A2C9E7DA39 /* [CP] Check Pods Manifest.lock */,
+				F3430FEE20B0408700FD4A2C /* Sources */,
+				F3430FEF20B0408700FD4A2C /* Frameworks */,
+				F3430FF020B0408700FD4A2C /* Resources */,
+				CC98DCE82AF6690F901DFD61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartLock;
+			productName = smartLock;
+			productReference = F3430FF220B0408700FD4A2C /* smartLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F343100520B0408700FD4A2C /* smartLockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F343101D20B0408700FD4A2C /* Build configuration list for PBXNativeTarget "smartLockTests" */;
+			buildPhases = (
+				460A444E7A514B98E169CCC4 /* [CP] Check Pods Manifest.lock */,
+				F343100220B0408700FD4A2C /* Sources */,
+				F343100320B0408700FD4A2C /* Frameworks */,
+				F343100420B0408700FD4A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F343100820B0408700FD4A2C /* PBXTargetDependency */,
+			);
+			name = smartLockTests;
+			productName = smartLockTests;
+			productReference = F343100620B0408700FD4A2C /* smartLockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F343101020B0408700FD4A2C /* smartLockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F343102020B0408700FD4A2C /* Build configuration list for PBXNativeTarget "smartLockUITests" */;
+			buildPhases = (
+				3979E31DD2A57716FE541B17 /* [CP] Check Pods Manifest.lock */,
+				F343100D20B0408700FD4A2C /* Sources */,
+				F343100E20B0408700FD4A2C /* Frameworks */,
+				F343100F20B0408700FD4A2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F343101320B0408700FD4A2C /* PBXTargetDependency */,
+			);
+			name = smartLockUITests;
+			productName = smartLockUITests;
+			productReference = F343101120B0408700FD4A2C /* smartLockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3430FEA20B0408700FD4A2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Oleksandr Verbych";
+				TargetAttributes = {
+					F3430FF120B0408700FD4A2C = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					F343100520B0408700FD4A2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3430FF120B0408700FD4A2C;
+					};
+					F343101020B0408700FD4A2C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F3430FF120B0408700FD4A2C;
+					};
+				};
+			};
+			buildConfigurationList = F3430FED20B0408700FD4A2C /* Build configuration list for PBXProject "smartLock" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3430FE920B0408700FD4A2C;
+			productRefGroup = F3430FF320B0408700FD4A2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3430FF120B0408700FD4A2C /* smartLock */,
+				F343100520B0408700FD4A2C /* smartLockTests */,
+				F343101020B0408700FD4A2C /* smartLockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3430FF020B0408700FD4A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F343100020B0408700FD4A2C /* LaunchScreen.storyboard in Resources */,
+				F3430FFD20B0408700FD4A2C /* Assets.xcassets in Resources */,
+				F3430FFB20B0408700FD4A2C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F343100420B0408700FD4A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F343100F20B0408700FD4A2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3979E31DD2A57716FE541B17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartLockUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		460A444E7A514B98E169CCC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartLockTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F86070EA4C910A2C9E7DA39 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartLock-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC98DCE82AF6690F901DFD61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-smartLock/Pods-smartLock-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-smartLock/Pods-smartLock-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3430FEE20B0408700FD4A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3430FF820B0408700FD4A2C /* LoginViewController.swift in Sources */,
+				04587F6420B0CFD30004B56F /* Extensions.swift in Sources */,
+				83EB1EE420E23AF800E7EDAF /* LocationManager.swift in Sources */,
+				BB3F477820B1404400DE8CB5 /* SettingsViewController.swift in Sources */,
+				83023E4120E12B5500DB287E /* SmartLockSwitch.swift in Sources */,
+				F3CBB95E20B042EC00458626 /* SmartLockManager.swift in Sources */,
+				F3430FF620B0408700FD4A2C /* AppDelegate.swift in Sources */,
+				F3CBB96020B0551800458626 /* HomeViewController.swift in Sources */,
+				F3CBB96220B05A1400458626 /* KeyStorage.swift in Sources */,
+				83023E1D20E0CFF300DB287E /* AppShortcutType.swift in Sources */,
+				835BB29620E2412D00ACBD1E /* IndeemaOfficeCircularRegion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F343100220B0408700FD4A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F343100B20B0408700FD4A2C /* smartLockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F343100D20B0408700FD4A2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F343101620B0408700FD4A2C /* smartLockUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F343100820B0408700FD4A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3430FF120B0408700FD4A2C /* smartLock */;
+			targetProxy = F343100720B0408700FD4A2C /* PBXContainerItemProxy */;
+		};
+		F343101320B0408700FD4A2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3430FF120B0408700FD4A2C /* smartLock */;
+			targetProxy = F343101220B0408700FD4A2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3430FF920B0408700FD4A2C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3430FFA20B0408700FD4A2C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3430FFE20B0408700FD4A2C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3430FFF20B0408700FD4A2C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F343101820B0408700FD4A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F343101920B0408700FD4A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F343101B20B0408700FD4A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F43E7BD42A14AE49BE76724 /* Pods-smartLock.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ7FRR6Z9T;
+				INFOPLIST_FILE = smartLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.indeema.smartLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "smartLock/smartLock-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F343101C20B0408700FD4A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73D815BF586683C0EFBF50EB /* Pods-smartLock.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BZ7FRR6Z9T;
+				INFOPLIST_FILE = smartLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.indeema.smartLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "smartLock/smartLock-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F343101E20B0408700FD4A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D4E0AF8DB5BBFBC8ECC00D7 /* Pods-smartLockTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S45SH5TQ57;
+				INFOPLIST_FILE = smartLockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.indeema.smartLockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartLock.app/smartLock";
+			};
+			name = Debug;
+		};
+		F343101F20B0408700FD4A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F45C5D3F95DF4EEF04B149E /* Pods-smartLockTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S45SH5TQ57;
+				INFOPLIST_FILE = smartLockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.indeema.smartLockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartLock.app/smartLock";
+			};
+			name = Release;
+		};
+		F343102120B0408700FD4A2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2917D7AFC80AA76B82B94BF /* Pods-smartLockUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S45SH5TQ57;
+				INFOPLIST_FILE = smartLockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.indeema.smartLockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartLock;
+			};
+			name = Debug;
+		};
+		F343102220B0408700FD4A2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E7E490692DDA5703685279 /* Pods-smartLockUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S45SH5TQ57;
+				INFOPLIST_FILE = smartLockUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.indeema.smartLockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartLock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3430FED20B0408700FD4A2C /* Build configuration list for PBXProject "smartLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F343101820B0408700FD4A2C /* Debug */,
+				F343101920B0408700FD4A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F343101A20B0408700FD4A2C /* Build configuration list for PBXNativeTarget "smartLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F343101B20B0408700FD4A2C /* Debug */,
+				F343101C20B0408700FD4A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F343101D20B0408700FD4A2C /* Build configuration list for PBXNativeTarget "smartLockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F343101E20B0408700FD4A2C /* Debug */,
+				F343101F20B0408700FD4A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F343102020B0408700FD4A2C /* Build configuration list for PBXNativeTarget "smartLockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F343102120B0408700FD4A2C /* Debug */,
+				F343102220B0408700FD4A2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3430FEA20B0408700FD4A2C /* Project object */;
+}

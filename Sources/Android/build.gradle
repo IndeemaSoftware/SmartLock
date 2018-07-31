@@ -1,0 +1,92 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.41'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    compileSdkVersionValue = 27
+    minSdkVersionValue = 21
+    targetSdkVersionValue = 27
+
+    versionCodeValue = 6
+    versionNameValue = "1.1.1"
+
+    multiDexEnabledValue = true
+    shrinkResourceValue = false
+    minifyEnabledValue = false
+
+    supportLibraryVersion = '27.1.1'
+    supportConstrainVersion = '1.1.0'
+
+    butterKnifeVersion = '8.8.1'
+
+    daggerVersion = '2.15'
+    rxVersion = '2.0.2'
+
+
+    retrofit2Version = '2.4.0'
+    retrofit2AdapterVersion = "2.4.0"
+
+    okhttp3Version = '3.10.0'
+    okhttp3LoggingInterceptorVersion = '3.8.1'
+
+    supportDependencies = [
+            appCompat       : "com.android.support:appcompat-v7:${supportLibraryVersion}",
+            support         : "com.android.support:support-v4:${supportLibraryVersion}",
+            design          : "com.android.support:design:${supportLibraryVersion}",
+            palette         : "com.android.support:palette-v7:${supportLibraryVersion}",
+            annotations     : "com.android.support:support-annotations:${supportLibraryVersion}",
+            recyclerview    : "com.android.support:recyclerview-v7:${supportLibraryVersion}",
+            cardview        : "com.android.support:cardview-v7:${supportLibraryVersion}",
+            customTabs      : "com.android.support:customtabs:${supportLibraryVersion}",
+            constraintLayout: "com.android.support.constraint:constraint-layout:${supportConstrainVersion}"
+    ]
+
+    daggerDependencies = [
+            dagger: "com.google.dagger:dagger:${daggerVersion}",
+    ]
+
+    retrofitDependencies = [
+            retrofit      : "com.squareup.retrofit2:retrofit:${retrofit2Version}",
+            converterGson : "com.squareup.retrofit2:converter-gson:${retrofit2Version}",
+            adapterRxjava2: "com.squareup.retrofit2:adapter-rxjava2:${retrofit2Version}",
+    ]
+
+    okHttpDependencies = [
+            okhttp            : "com.squareup.okhttp3:okhttp:${okhttp3Version}",
+            loggingInterceptor: "com.squareup.okhttp3:logging-interceptor:${okhttp3LoggingInterceptorVersion}"
+    ]
+
+    rxDependencies = [
+            rxandroid2: "io.reactivex.rxjava2:rxandroid:${rxVersion}",
+            rxkotlin2 : "io.reactivex.rxjava2:rxkotlin:${rxVersion}",
+            rxjava2   : "io.reactivex.rxjava2:rxjava:${rxVersion}"
+    ]
+
+    butterKnifeDependencies = [
+            butterKnife: "com.jakewharton:butterknife:${butterKnifeVersion}"
+    ]
+}

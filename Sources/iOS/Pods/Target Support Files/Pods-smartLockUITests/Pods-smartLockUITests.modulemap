@@ -1,0 +1,6 @@
+framework module Pods_smartLockUITests {
+  umbrella header "Pods-smartLockUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

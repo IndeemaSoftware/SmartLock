@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/cardview_shadow_start_color">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:endColor="@color/colorPrimaryDark"
+                android:startColor="@color/colorPrimary" />
+            <corners android:radius="35dp" />
+        </shape>
+    </item>
+</ripple>

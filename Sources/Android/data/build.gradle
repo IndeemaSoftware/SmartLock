@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion compileSdkVersionValue
+
+    defaultConfig {
+        minSdkVersion minSdkVersionValue
+        targetSdkVersion targetSdkVersionValue
+        versionCode versionCodeValue
+        versionName versionNameValue
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled multiDexEnabledValue
+
+    }
+
+    buildTypes {
+        release {
+            shrinkResources shrinkResourceValue
+            minifyEnabled minifyEnabledValue
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+
+
+    //retrofit
+    implementation retrofitDependencies.retrofit
+    implementation retrofitDependencies.converterGson
+    implementation retrofitDependencies.adapterRxjava2
+
+    //okHttp
+    implementation okHttpDependencies.okhttp
+    implementation okHttpDependencies.loggingInterceptor
+
+    //rx
+    implementation rxDependencies.rxandroid2
+    implementation rxDependencies.rxkotlin2
+    implementation rxDependencies.rxjava2
+}

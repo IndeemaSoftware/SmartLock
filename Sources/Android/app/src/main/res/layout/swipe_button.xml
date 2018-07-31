@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/swipe_button_view_unlock"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="@drawable/swipe_background_unlocked"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/ic_lock_white"
+        app:layout_constraintBottom_toBottomOf="@id/swipe_button_view_lock"
+        app:layout_constraintStart_toStartOf="@id/swipe_button_view_lock"
+        app:layout_constraintTop_toTopOf="@id/swipe_button_view_lock" />
+
+    <View
+        android:id="@+id/swipe_button_view_lock"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="@drawable/swipe_background_locked"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/ic_unlock_white"
+        app:layout_constraintBottom_toBottomOf="@id/swipe_button_view_lock"
+        app:layout_constraintEnd_toEndOf="@id/swipe_button_view_lock"
+        app:layout_constraintTop_toTopOf="@id/swipe_button_view_lock" />
+
+    <ImageView
+        android:id="@+id/swipe_button_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_lock"
+        app:layout_constraintBottom_toBottomOf="@id/swipe_button_view_lock"
+        app:layout_constraintTop_toTopOf="@id/swipe_button_view_lock" />
+</android.support.constraint.ConstraintLayout>
