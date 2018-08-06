@@ -1,3 +1,0 @@
-flask
-RPi.GPIO
-requests
