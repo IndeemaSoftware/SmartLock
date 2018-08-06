@@ -13,8 +13,8 @@ import com.indeema.smartlock.di.module.*
 
 class App : Application() {
 
-    val REDMINE_DOMAIN = "https://redmine.indeema.com"
-    val DOOR_DOMAIN = "http://smartlock.indeema.com"
+    val REDMINE_DOMAIN = "https://redmine.{your_redmine_domain}.com"
+    val DOOR_DOMAIN = "http://{your_server_endpoint}"
 
     private val mAppComponent: AppComponent by lazy {
         DaggerAppComponent
