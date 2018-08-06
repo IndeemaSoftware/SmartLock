@@ -12,7 +12,7 @@ def open_door():
     print(content)
 #    print('- {}'.format(content['api_key']))
 
-    response = requests.get("https://redmine.indeema.com/users/current.json",
+    response = requests.get("https://your_server/users/current.json",
                             auth=(format(content['api_key']), "random_pass"))
 
     if response.status_code == 200:
