@@ -16,3 +16,5 @@ Also, [here](https://www.hackster.io/indeema/smart-lock-6a7f60) is additional ne
 If you encounter an issue or you have any comments or propositions with using **SmartLock** then you can reach us at **support@indeema.com**.
 
 - You can also follow our news at [@IndeemaSoftware](https://twitter.com/IndeemaSoftware) or on our [blog](https://indeema.com/blog).
+
+To know more about us and our [IoT expertise](https://indeema.com/services/iot), visit our website http://indeema.com
